@@ -1,0 +1,15 @@
+<div id="con-prelegenci" class="con-bg">
+    <span id="prelegenci" class="anchor-jump-link"></span>
+    <div class="con-content">
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.speakers[page.lang] | default: nav.speakers.pl }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        {% for speaker in site.data.speakers.speakers %}
+        <div class="third">
+            <img src="{{ speaker.photo | relative_url }}" alt="{{ speaker.name }}" />
+            <h3>{{ speaker.name }}</h3>
+            <span>{{ speaker.content[page.lang] | default: speaker.content.pl }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>

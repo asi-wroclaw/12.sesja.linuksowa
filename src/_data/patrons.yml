@@ -1,0 +1,60 @@
+patrons:
+  - group:
+    patrons:
+      - id: karierait
+        name: "Targi Kariera IT"
+        url: "https://www.targikarierait.pl/"
+        logo: "img/loga/patron-karierait.webp"
+        klass: 'quater'
+      - id: linuxorgpl
+        name: "Linux.org.pl"
+        url: "https://www.linux.org.pl/"
+        logo: "img/loga/patron-plug.webp"
+        klass: 'quater'
+      - id: chip
+        name: "CHIP"
+        url: "https://www.chip.pl"
+        logo: "img/loga/patron-chip.webp"
+        klass: 'quater'
+      - id: fwioo
+        name: "FWIOO"
+        url: "https://fwioo.pl/"
+        logo: "img/loga/patron-fwioo.webp"
+        klass: 'quater'
+      - id: osworld
+        name: "OSWorld.pl"
+        url: "https://osworld.pl/"
+        logo: "img/loga/patron-osworld.webp"
+        klass: 'quater'
+      - id: hackerspacewroclaw
+        name: "Hackerspace Wrocław"
+        url: "https://www.hswro.org/"
+        logo: "img/loga/patron-hackerspacewroclaw.webp"
+        klass: 'quater'
+      - id: sdjournal
+        name: "SD Journal"
+        url: "https://sdjournal.pl/"
+        logo: "img/loga/patron-sdjournal.webp"
+        klass: 'quater'
+      - id: pracait
+        name: "Praca IT"
+        url: "https://pracait.com/"
+        logo: "img/loga/patron-pracait.webp"
+        klass: 'quater'
+      - id: 4programmers
+        name: "4programmers.net"
+        url: "https://4programmers.net/"
+        logo: "img/loga/patron-4p.svg"
+        klass: 'quater'
+      - id: programista
+        name: "Programista Magazyn"
+        url: "https://programistamag.pl/"
+        logo: "img/loga/patron-programista.webp"
+        klass: 'quater'
+  - group:
+    patrons:
+      - id: marszalek
+        name: "Urząd Marszałkowski Województwa Dolnośląskiego"
+        url: "https://www.umwd.dolnyslask.pl/"
+        logo: "img/loga/patron-marszalek.webp"
+        klass: 'logo-marszalek-12sl'

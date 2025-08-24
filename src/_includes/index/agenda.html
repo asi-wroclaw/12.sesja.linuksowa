@@ -1,0 +1,92 @@
+{% assign navigation = site.data.navigation.navigation %}
+{% assign labels = site.data.agenda.labels %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].agenda | default: bgs.default.agenda %}
+
+<div id="con-agenda" class="con-bg" style="background-color: {{ section_bg }};">
+    <span id="agenda" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">Agenda</h2>
+        <h2 class="spacer">&nbsp;</h2>
+
+        {% if edition == 12 %}
+        <div id="agenda-sobota">
+            {% assign agenda_info = site.data.agenda.days.saturday %}
+            <h3>
+                <span class="data">{{ agenda_info.date[page.lang] }}</span>
+                {{ agenda_info.day[page.lang] }}
+            </h3>
+            {% assign rooms = "duza,mala" | split: "," %}
+            {% for room in rooms %}
+            {% assign agenda_items = site.data.agenda.saturday[room] %}
+            <div class="half">
+                <h4>{{ labels[room][page.lang] }}</h4>
+                {% for item in agenda_items %}
+                <div class="prelekcja">
+                    <div class="godzina">{{ item.time }}</div>
+                    <div class="opis">
+                        <div class="tytul">{{ item.title[page.lang] | default: item.title.pl }}</div>
+                        {% if item.author %}<div class="autor">{{ item.author }}</div>{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        <div id="agenda-niedziela">
+            {% assign agenda_info = site.data.agenda.days.sunday %}
+            <h3>
+                <span class="data">{{ agenda_info.date[page.lang] }}</span>
+                {{ agenda_info.day[page.lang] }}
+            </h3>
+            {% assign agenda_items = site.data.agenda.sunday %}
+            {% for item in agenda_items %}
+            <div class="prelekcja">
+                <div class="godzina">{{ item.time }}</div>
+                <div class="opis">
+                    <div class="tytul">{{ item.title[page.lang] | default: item.title.pl }}</div>
+                    {% if item.author %}<div class="autor">{{ item.author }}</div>{% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% else %}
+
+        <div id="agenda-sobota">
+            {% assign days = "saturday,sunday" | split: "," %}
+            {% for day in days %}
+            {% assign agenda_items = site.data.agenda[day] %}
+            {% assign agenda_info = site.data.agenda.days[day] %}
+            <div class="half">
+                <h3>
+                    <span class="data">{{ agenda_info.date[page.lang] }}</span>
+                    {{ agenda_info.day[page.lang] }}
+                </h3>
+                {% for item in agenda_items %}
+                <div class="prelekcja">
+                    <div class="godzina">{{ item.time }}</div>
+                    <div class="opis">
+                        <div class="tytul">
+                            {{ item.title[page.lang] | default: item.title.pl }}
+                            {% if item.lang %}<span class="lang">{{ item.lang }}</span>{% endif %}
+                        </div>
+                        {% if item.author %}<div class="autor">{{ item.author }}</div>{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if edition != 12 %}
+        <div class="extended-link">
+            <a href="{{ navigation.agenda_url[page.lang] | relative_url }}">
+                {{ labels.extended_text[page.lang] }}
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>

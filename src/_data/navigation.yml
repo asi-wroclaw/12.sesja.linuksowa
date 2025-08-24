@@ -1,0 +1,52 @@
+navigation:
+  logo:
+    pl: "img/logo-male-pl.webp"
+  about:
+    pl: "O Sesji"
+  cfp:
+    pl: "Call for Papers"
+  previous:
+    pl: "Poprzednia edycja"
+  agenda:
+    pl: "Agenda"
+  workshops:
+    pl: "Warsztaty"
+  dojazd:
+    pl: "Dojazd"
+  sponsorship:
+    pl: "Współpraca"
+  sponsors:
+    pl: "Sponsorzy"
+  speakers:
+    pl: "Prelegenci"
+  orgs:
+    pl: "Organizatorzy"
+  live:
+    pl: "Nagrania"
+  contact:
+    pl: "Kontakt"
+  lpi:
+    pl: "Egzaminy LPI"
+  patrons:
+    pl: "Patroni medialni"
+  home_url:
+    pl: "/"
+    en: "/en"
+  agenda_url:
+    pl: "/agenda"
+    en: "/en/agenda"
+  lang_url:
+    pl: "/en"
+    en: "/"
+  lang_agenda_url:
+    pl: "/en/agenda"
+    en: "/agenda"
+  lang_flag:
+    pl: "img/icon-us.webp"
+    en: "img/icon-pl.webp"
+  lang_text:
+    pl: "English version"
+    en: "Wersja polska"
+  back_to_home:
+    pl: "Powrót do strony głównej"
+    en: "Back to home page"

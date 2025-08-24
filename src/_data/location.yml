@@ -1,0 +1,16 @@
+location:
+  - id: p1
+    header:
+      pl: "Centrum Technologii Audiowizualnych"
+    content:
+      pl: "CeTA znajduje się przy ulicy Wystawowej, przy Hali Stulecia i w pobliżu Wrocławskiego ZOO."
+  - id: p2
+    header:
+      pl: "Komunikacją miejską"
+    content:
+      pl: "Udajemy się dowolną linią jadącą na węzeł Plac Grunwaldzki, a następnie przesiadamy w tramwaj 1,2,4 lub 10 (kierunkek Biskupin) i wysiadamy na przystanku Hala Stulecia."
+  - id: p3
+    header:
+      pl: "Samochodem"
+    content:
+      pl: "Dla osób zarejestrowanych (link do rejestracji w sekcji znajdziesz w sekcji <a href=\"#about\">O sesji</a>), po uprzednim kontakcie, będzie dostępny darmowy parking."

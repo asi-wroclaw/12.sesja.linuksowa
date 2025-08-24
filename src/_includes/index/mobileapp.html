@@ -1,0 +1,22 @@
+{% assign mobileapp = site.data.common.mobileapp %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].mobileapp | default: bgs.default.mobileapp %}
+
+{% if edition == 12 %}
+<div class="con-content" style="background-color: {{ section_bg }};">
+    <h2 class="bg-text">Aplikacja na telefon</h2>
+    <h2 class="spacer">&nbsp;</h2>
+    <div class="half">
+        <div style="text-align: center;"><img src="{{ 'img/android1.webp' | relative_url }}" /></div>
+    </div>
+    <div class="half">
+        <div style="text-align: center;"><img src="{{ 'img/android2.webp' | relative_url }}" /></div>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://play.google.com/store/apps/details?id=pl.wroclaw.asi.sesjalinuksowa">
+            <img alt="Get it on Google Play" src="{{ 'img/gplaybutton.webp' | relative_url }}" />
+        </a>
+    </div>
+</div>
+{% endif %}

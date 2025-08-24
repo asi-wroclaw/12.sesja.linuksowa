@@ -1,0 +1,33 @@
+sponsors:
+  - group:
+    sponsors:
+      - id: tieto
+        name: "Tieto"
+        url: "https://tieto.pl"
+        logo: "img/loga/sponsor-tieto.webp"
+        klass: "tieto"
+        width: 238
+  - group:
+    sponsors:
+      - id: mokyokit
+        name: "Mokyokit"
+        url: "https://mokyokit.com/"
+        logo: "img/loga/sponsor-mokyokit.webp"
+        klass: "third"
+      - id: mirantis
+        name: "Mirantis"
+        url: "https://www.mirantis.com/"
+        logo: "img/loga/sponsor-mirantis.webp"
+        klass: "third"
+      - id: ovh
+        name: "OVH"
+        url: "https://www.ovh.pl/"
+        logo: "img/loga/sponsor-ovh.webp"
+        klass: "third"
+  - group:
+    sponsors:
+      - id: droptica
+        name: "Droptica"
+        url: "https://droptica.pl"
+        logo: "img/loga/sponsor-droptica.webp"
+        klass: "third"

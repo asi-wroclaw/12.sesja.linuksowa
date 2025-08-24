@@ -1,0 +1,103 @@
+labels:
+  speaker:
+    pl: "Prelegent:"
+  duza:
+    pl: "Duża sala"
+  mala:
+    pl: "Mała sala"
+days:
+  saturday:
+    date:
+      pl: "18 kwietnia"
+    day:
+      pl: ".Sobota"
+  sunday:
+    date:
+      pl: "19 kwietnia"
+    day:
+      pl: ".Niedziela"
+saturday:
+  duza:
+    - time: "10:00-11:00"
+      title:
+        pl: "Quo Vadis, OpenSource?"
+      author: "Robert \"BoBsoN\" Partyka"
+    - time: "11:00-12:00"
+      title:
+        pl: "Studio Open Source"
+      author: "Piotr Arłukowicz"
+    - time: "12:00-13:00"
+      title:
+        pl: "Orchestrating Docker containers at scale"
+      author: "Maciej Lasyk"
+    - id: lunch
+      time: "13:00-14:00"
+      title:
+        pl: "Przerwa obiadowa"
+    - time: "14:00-15:30"
+      title:
+        pl: "Ubiquitous Computing based on Open Source"
+      author: "Klaus Knopper"
+    - time: "15:30-16:00"
+      title:
+        pl: "Sztuka wyboru: decentralizacja, standaryzacja, interoperacyjność"
+      author: "Michał \"rysiek\" Woźniak"
+    - time: "16:00-17:00"
+      title:
+        pl: "VPN, Tor, OpenSSL ,GPG, Tails, RedPhone/Signal - naucz swojego kolegę jak upewnić się, że nikt nie podsłucha waszej konwersacji."
+      author: "Marcin Tomków"
+    - time: "17:00-18:00"
+      title:
+        pl: "Debugowanie jądra Linuksa"
+      author: "Krzysztof Adamski"
+  mala:
+    - time: "10:00-11:00"
+      title:
+        pl: "Going deeper czyli od elfa do procesora"
+      author: "Adam Balawender"
+    - time: "11:00-11:30"
+      title:
+        pl: "Jakiego projektowania potrzebujemy?"
+      author: "Robert Zając"
+    - time: "11:30-12:30"
+      title:
+        pl: "Ansible for SDN deployment: benefits and good practices"
+      author: "Szymon Święcki"
+    - time: "12:30-13:00"
+      title:
+        pl: "Hackerspace - dlaczego warto do niego należeć"
+      author: "Franciszek Maroszek"
+    - id: break
+      time: "13:00-16:00"
+      title:
+        pl: "Przerwa"
+    - time: "16:00-17:00"
+      title:
+        pl: "Opensource'owa kamera 4K Axiom - czyli jak otwieramy branżę filmową"
+      author: "Michał Giełda"
+sunday:
+  - time: "10:00-11:00"
+    title: 
+      pl: "Narzędzia w Linuksie których nie znasz a powinieneś"
+    author: "Błażej \"Mewp\" Święcicki"
+  - time: "11:00-12:00"
+    title: 
+      pl: "\"Dynamic porting\" of Dying Light for Linux/SteamOS"
+    author: "Wojciech Zeler, Tomasz Wachowski"
+  - id: lunch
+    time: "12:00-13:00"
+    title: 
+      pl: "Przerwa obiadowa"
+  - time: "13:00-14:00"
+    title: 
+      pl: "Containers with systemd"
+    author: "Lennart Poettering"
+  - time: "14:00-15:00"
+    title: 
+      pl: "OpenStack Neutron - od struktur danych do topologii sieci"
+    author: "Adam Heczko"
+  - id: break
+    time: "15:00-15:30"
+    title: 
+      pl: "Zakończenie"
+

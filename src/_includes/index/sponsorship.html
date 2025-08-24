@@ -1,0 +1,19 @@
+{% assign sponsorship = site.data.sponsorship.sponsorship %}
+{% assign nav = site.data.navigation.navigation %}
+{% assign edition = site.edition %}
+
+<div id="con-wspolpraca" class="con-bg">
+    <span id="wspolpraca" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2>{{ nav.sponsorship[page.lang] | default: nav.sponsorship.pl }}</h2>
+        <h3>{{ sponsorship.content[page.lang] | default: sponsorship.content.pl }}</h3>
+        {% if edition == 12 %}
+        <a class="button" href="{{ sponsorship.link_href.pl | relative_url }}">POLSKI</a>
+        <a class="button" href="{{ sponsorship.link_href.en | relative_url }}">ENGLISH</a>
+        {% else %}
+        <a class="button"
+            href="{{ sponsorship.link_href[page.lang] | default: sponsorship.link_href.pl | relative_url }}">{{
+            sponsorship.link[page.lang] | default: sponsorship.link.pl }}</a>
+        {% endif %}
+    </div>
+</div>

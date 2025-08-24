@@ -1,0 +1,32 @@
+about:
+  - id: p1
+    header:
+      pl: "Czym jest sesja?"
+    content:
+      pl: "Jest to konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
+  - id: p2
+    header:
+      pl: "Gdzie?"
+    content:
+      pl: "Tegoroczna edycja odbędzie się we <a href=\"https://filmstudioceta.pl\">Wrocławskim Centrum Technnologii Audiowizualnych</a>. Po więcej informacji zapraszamy do sekcji <a href=\"#dojazd\">Jak dojechać?</a>"
+  - id: p3
+    header:
+      pl: "Nie możesz dotrzeć?"
+    content:
+      pl: "Nie ma obaw, prelekcje będą transmitowane na żywo poprzez <a href=\"https://www.youtube.com/@asi-wroclaw\">nasz kanał w serwisie Youtube</a>."
+  - id: p4
+    header:
+      pl: "Nasz cel"
+    content:
+      pl: "Naszym celem jest promowanie idei wolnego oprogramowania. Wiemy, że Open Source jest coraz bardziej popularny w rozwiązaniach komercyjnych, jak i domowych. I zależy nam na jego popularyzacji."
+  - id: p5
+    header:
+      pl: "Jak to wygląda?"
+    content:
+      pl: "Udział w Sesji jest darmowy. Co roku na konferencji spotykają się pasjonaci informatyki z całej Polski, aby pogłębić swoją wiedzę i podjąć dyskusję w interesujących ich dziedzinach."
+  - id: p6
+    header:
+      pl: "Czy trzeba się rejestrować?"
+    content:
+      pl: "Wstęp jest wolny, jednak dla zarejestrowanych osób przewidujemy dodatkowe atrakcje."
+    image: "img/button-letsmeet.webp"

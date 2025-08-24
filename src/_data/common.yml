@@ -1,0 +1,60 @@
+meta:
+  year: 2015
+  pl:
+    name: "12. Sesja Linuksowa"
+    author: "Akademickie Stowarzyszenie Informatyczne"
+    description: "Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
+    keywords: "Sesja Linuksowa, konferencja, ASI, Akademickie Stowarzyszenie Informatyczne, Wrocław, Open Source, Linux, IT, studenci, programowanie"
+    locale: "pl_PL"
+    title: "12. Sesja Linuksowa | 18-19 kwietnia 2015 | Wrocław"
+
+map:
+  bbox: "17.070,51.106,17.079,51.109"
+  marker: "51.10841596810099,17.074926495552063"
+  map: "16/51.108416/17.074926"
+
+youtube:
+  playlist_id: "PLTvZBPQxCI8FlBKzCESV2tIq7XF50_LgE"
+
+backgrounds:
+  default:
+    hero: "#FFF"
+    about: "#FFF"
+    live: "#EEE"
+    agenda: "#FFF"
+    speakers: "#EEE"
+    location: "#FFF"
+    sponsors: "#FFF"
+    patrons: "#EEE"
+    organizers: "#FFF"
+    contact: "#EEE"
+  editions:
+    12:
+      about: "#EEE"
+      live: "#FFF"
+      agenda: "#FFF"
+      mobileapp: "#FFF"
+      speakers: "#EEE"
+      location: "#FFF"
+      sponsors: "#EEE"
+      patrons: "#EEE"
+      organizers: "#FFF"
+      contact: "#EEE"
+    13:
+      hero: "#FFF"
+      about: "#EEE"
+      live: "#FFF"
+      agenda: "#FFF"
+      speakers: "#EEE"
+      location: "#FFF"
+      sponsors: "#EEE"
+      patrons: "#EEE"
+      organizers: "#FFF"
+      ourteam: "#EEE"
+      contact: "#FFF"
+    14:
+      workshops: "#EEE"
+      lpi: "#FFF"
+    15:
+      organizers: "#EEE"
+      contact: "#FFF"

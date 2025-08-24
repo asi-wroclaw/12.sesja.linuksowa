@@ -1,0 +1,38 @@
+{% assign workshops = site.data.workshops.workshops %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].workshops | default: bgs.default.workshops %}
+
+{% if edition == 14 %}
+<div class="con-bg" id="con-warsztaty" style="background-color: {{ section_bg }};">
+    <span id="warsztaty" class="anchor-jump-link"></span>
+    <div class="con-content">
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.workshops[page.lang] | default: nav.workshops.pl }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        <div class="opis">
+            {% for section in workshops %}
+            {% if section.layout == 'half' %}
+            <div class="half">
+                <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+                <p>{{ section.content[page.lang] | default: section.content.pl }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% for section in workshops %}
+        {% if section.layout == 'third' %}
+        <div class="third">
+            <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+            <p>
+                {{ section.content[page.lang] | default: section.content.pl }}
+                {% if section.image %}<br />
+                <center><img style="max-width: 50%" src="{{ section.image | relative_url }}" /></center>
+                {% endif %}
+            </p>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

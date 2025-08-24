@@ -1,0 +1,27 @@
+{% assign about = site.data.about.about %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].about | default: bgs.default.about %}
+
+<div id="con-about" class="con-bg" style="background-color: {{ section_bg }};">
+    <span id="about" class="anchor-jump-link"></span>
+    <div class="con-content">
+        {% for section in about %}
+        <div class="third">
+            {% if edition != 12 %}
+            <img alt="{{ section.header[page.lang] | default: section.header.pl }}"
+                src="{{ section.icon | relative_url }}" width="300" height="300" />
+            {% endif %}
+            <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+            <p>
+                {{ section.content[page.lang] | default: section.content.pl }}
+                {% if section.image %}<br />
+            <div style="text-align: center;">
+                <a href="https://letsmeet.world/V38lQBxq0ezJ/"><img src="{{ section.image | relative_url }}" /></a>
+            </div>
+            {% endif %}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

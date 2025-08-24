@@ -1,0 +1,42 @@
+{% assign hero = site.data.hero.hero %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].hero | default: bgs.default.hero %}
+
+<div id="con-description" class="con-bg" style="background-color: {{ section_bg }};">
+    <span id="top" class="anchor-jump-link"></span>
+    {% if edition != 13 %}
+    <div class="main-bg-container" style="background-image: url('{{ hero.bg | relative_url }}')"></div>
+    {% endif %}
+    <div class="con-content" {% if edition==12 or edition==13 %} style="background-color: unset;" {% endif %}>
+        {% if edition == 12 %}
+        <div id="dane">
+            <h1>{{ hero.title }}</h1>
+            <h2>{{ hero.date }}</h2>
+            <h2><a href="#live">{{ hero.recordings }}</a></h2>
+        </div>
+        {% else %}
+        <div class="social">
+            <span>
+                <img src="{{ 'img/squares-empty.webp' | relative_url }}" width="472" height="457" />
+            </span>
+            <span>
+                <img src="{{ 'img/squares-empty.webp' | relative_url }}" width="472" height="457" />
+            </span>
+        </div>
+        <div id="logo-container">
+            <img alt="14. Sesja Linuksowa" src="{{ hero.logo[page.lang] | default: hero.logo.pl | relative_url }}"
+                width="{{ hero.logo_width[page.lang] | default: hero.logo_width.pl }}" />
+        </div>
+        <div class="social">
+            {% for social in hero.social %}
+            {% if social.url %}
+            <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="{{ social.icon | relative_url }}" width="472" height="457" />
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>

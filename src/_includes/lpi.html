@@ -1,0 +1,28 @@
+{% assign lpi = site.data.lpi.lpi %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].lpi | default: bgs.default.lpi %}
+
+{% if edition == 14 %}
+<div class="con-bg" id="con-lpi" style="background-color: {{ section_bg }};">
+    <span id="lpi" class="anchor-jump-link"></span>
+    <div class="con-content">
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.lpi[page.lang] | default: nav.lpi.pl }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        {% for section in lpi %}
+        <div class="third">
+            <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+            <p>
+                {{ section.content[page.lang] | default: section.content.pl }}
+                {% if section.image %}<br />
+            <div style="text-align: center;">
+                <img style="max-width: 40%" src="{{ section.image | relative_url }}" />
+            </div>
+            {% endif %}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

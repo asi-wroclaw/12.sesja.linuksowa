@@ -1,0 +1,86 @@
+speakers:
+  - id: s1
+    name: "Lennart Poettering"
+    photo: "/img/ludzie/lennartpoettering.webp"
+    content:
+      pl: "Niezwykle uzdolniony i kontrowersyjny projektant, programista i wizjoner. Od 2003 r. uczestniczył w ponad 40 projektach open source. Jest twórcą trzech podstawowych komponentów wielu dystrybucji: PulseAudio, Avahi, systemd."
+  - id: s2
+    name: "Klaus Knopper"
+    photo: "/img/ludzie/klausknopper.webp"
+    content:
+      pl: "Twórca <a href=\"https://www.knoppix.org\">Knoppixa</a> - pierwszej dystrybucji typu LiveCD oraz Adriane Knoppix - systemu dla osób niewidomych i z zaburzeniami widzenia."
+  - id: s3
+    name: "Maciej \"docent\" Lasyk"
+    photo: "/img/ludzie/lasyk.webp"
+    content:
+      pl: "Absolwent AGH w Krakowie, administrator w firmie Lumesse w wolnym czasie rozwijający dystrybuję Fedora oraz zapalony cyklista"
+  - id: s4
+    name: "Michał \"rysiek\" Woźniak"
+    photo: "/img/ludzie/rysiek.webp"
+    content:
+      pl: "Prezes Zarządu FWiOO, członek warszawskiego Hackerspace oraz zwolennik wolnego oprogramowania a wolnym czasie kolarz i żeglarz."
+  - id: s5
+    name: "Robert \"BoBsoN\" Partyka"
+    photo: "/img/ludzie/partyka.webp"
+    content:
+      pl: "Wiceprezes Polskiej Grupy Użytkowników Linuksa. Programista, miłośnik nowych technologii oraz literatury sf&f. Kibic inicjatyw promujących otwarte standardy i wolne/otwarte oprogramowanie."
+  - id: s6
+    name: "Błażej \"Mewp\" Święcicki"
+    photo: "/img/ludzie/mewp.webp"
+    content:
+      pl: "Sysadmin, programista, linuksiarz i obecny wiceprezes Akademickiego Stowarzyszenia Informatycznego. Zagorzały przeciwnik Facebooka i innych zcentralizowanych usług w chmurze."
+  - id: s7
+    name: "Adam Heczko"
+    photo: "/img/ludzie/heczko.webp"
+    content:
+      pl: "Security Engineer w firmie Mirantis. Zawodowo zajmuje się bezpieczeństwem informacji oraz kryptografią. Entuzjasta i propagator wolnego oprogramowania. Szczęśliwy mąż i ojciec dwójki dzieci, wolny czas spędza najchętniej rodzinnie w górach."
+  - id: s8
+    name: "Tomasz Wachowski"
+    photo: "/img/ludzie/wachowski.webp"
+    content:
+      pl: "Pracuje w Techland od 2013 roku - rozpoczął jako członek zespołu Hellraid, niedługo później dołączył do zespołu Linuksowego. \"Jednoosobowa armia\", odpowiedzialny za proces kompilacji, system plików, dźwięku, wielowątkowość i kod gier. W wolnych chwilach studiuje informatykę na Politechnice Wrocławskiej."
+  - id: s9
+    name: "Robert Zając"
+    photo: "/img/ludzie/zajac.webp"
+    content:
+      pl: "Projektant-grafik, współzałożyciel kolektywu kilku.com zajmującego się komunikacją wizualną i dizajnem eksperymentalnym. Współorganizator Lubelskich Spotkań Typograficznych \"Typolub\". Prowadzi zajęcia z projektowania informacyjnego na Wydziale Politologii UMCS."
+  - id: s10
+    name: "Marcin Tomków"
+    photo: "/img/ludzie/tomkow.webp"
+    content:
+      pl: "Senior Administrator systemów UNIX, GNU/Linux w firmie Tieto Poland Sp z o.o. Dziewięcioletnie doświadczenie w branży IT. Entuzjasta i propagator wolnego oprogramowania. Interesuje się wykorzystaniem i implementacją nowoczesnych technologii w budowie centrum danych i administracji serwerami. Na bieżąco śledzi najnowsze trendy w tej dziedzinie. Hobbystycznie programuje na platformę Apple OS X."
+  - id: s11
+    name: "Piotr Arłukowicz"
+    photo: "/img/ludzie/arlukowicz.webp"
+    content:
+      pl: "Twórca Polskiego Kursu Blendera, Blender Foundation Certified Trainer, zapaleniec-naukowiec, doktor chemii teoretycznej, grafik, animator, fan Gwiezdnych Wojen, speedgamer oraz zdeklarowany użytkownik Wolnego Oprogramowania. Wykładowca Roku 2015 na Uniwersytecie Gdańskim. Oprócz zainteresowań takich jak grafika 3D, animacja, FX, tworzenie gier ostatnio zajmuje się także drukiem 3D oraz elektroniką programowalną."
+  - id: s12
+    name: "Krzysztof Adamski"
+    photo: "/img/ludzie/adamski.webp"
+    content:
+      pl: "Inżynier oprogramowania specjalizujący się w nispoziomowych warstwach systemów opartych o jądro Linux. Pracuje głównie z urządzeniami wbudowanymi, najczęściej opartymi na systemie Android."
+  - id: s13
+    name: "Franciszek Maroszek"
+    photo: "/img/ludzie/maroszek.webp"
+    content:
+      pl: "Członek Zarządu Stowarzyszenia Hackerspace Wrocław. Na co dzień jeździ na rowerze, studiuje mechatronikę i pracuje w firmie produkującej drukarki 3D."
+  - id: s14
+    name: "Wojciech Zeler"
+    photo: "/img/ludzie/zeler.webp"
+    content:
+      pl: "Student informatyki na Politechnice Wrocławskiej i programista OpenGL w Techland. Autor API OpenGL w grach Dead Island i Dying Light."
+  - id: s15
+    name: "Szymon Święcki"
+    photo: "/img/ludzie/szymon.webp"
+    content:
+      pl: "SysOp, DevOps Engineer. Gorliwy zwolennik pełnej automatyzacji. Obecnie pracuje w OVH przy projekcie SDN. Poza pracą architekt rozwiązań opartych na platformie AWS."
+  - id: s16
+    name: "Adam Balawender"
+    photo: "/img/ludzie/balawender.webp"
+    content:
+      pl: "Student, aspirujący robotyk, aktualnie programista C w Nokia Networks. Zwolennik GNU/Linuksa i minimalistycznych rozwiązań."
+  - id: s17
+    name: "Michał Giełda"
+    photo: "/img/ludzie/unknown.webp"
+    content:
+      pl: "Michał jest w Antmicro odpowiedzialny za kontakty z klientami i partnerami. Na co dzień zajmuje się też dokumentowaniem czego popadnie, rozpoznawaniem coraz to nowych frameworków open source oraz technologii leżących u podstaw Internet of Things - najlepiej wszystkim naraz."

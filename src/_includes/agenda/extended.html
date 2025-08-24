@@ -1,0 +1,39 @@
+<div class="extended-agenda" style="margin-top: 5em">
+    <span id="agenda" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">Agenda</h2>
+        <h2 class="spacer">&nbsp;</h2>
+
+        {% assign days = "saturday,sunday" | split: "," %}
+        {% for day in days %}
+        {% assign agenda_info = site.data.agenda.days[day] %}
+        <h3>
+            <span class="data">{{ agenda_info.date[page.lang] }}</span>
+            {{ agenda_info.day[page.lang] }}
+        </h3>
+        {% assign agenda_items = site.data.agenda[day] %}
+        {% for item in agenda_items %}
+        {% if item.time %}
+        <div class="prelekcja">
+            {% if item.photo %}
+            <img src="{{ item.photo | relative_url }}" alt="{{ item.author }}" />
+            {% endif %}
+            <div class="opis">
+                <div class="tytul">
+                    {{ item.title[page.lang] | default: item.title.pl }}
+                    {% if item.lang %}<span class="lang">{{ item.lang }}</span>{% endif %}
+                </div>
+                <div class="godzina">{{ item.time }}</div>
+                {% if item.desc %}
+                <div class="abstrakt">{{ item.desc[page.lang] | default: item.desc.pl }}</div>
+                {% endif %}
+                {% if item.author and item.id != 'lunch' and item.id != 'lpi' and item.id != 'lightning' %}
+                <div class="autor">{{ site.data.agenda.labels.speaker[page.lang] }} {{ item.author }}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>

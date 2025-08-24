@@ -1,0 +1,17 @@
+{% assign youtube = site.data.common.youtube %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].live | default: bgs.default.live %}
+
+<div id="con-live" class="con-bg" style="background-color: {{ section_bg }};">
+    <span id="live" class="anchor-jump-link"></span>
+    <div class="con-content">
+        {% assign live = site.data.live.live %}
+        <h2 class="bg-text">{{ live.title[page.lang] | default: live.title.pl }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        <div class="embed-container">
+            <iframe allowfullscreen src="https://www.youtube.com/embed/videoseries?list={{ youtube.playlist_id }}"
+                loading="lazy" style="border: 0"></iframe>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+organizers:
+  - name: "Akademickie Stowarzyszenie Informatyczne"
+    logo: "img/loga/logo-asi.webp"
+    url: "https://asi.wroclaw.pl"
+  - name: "Politechnika Wrocławska"
+    logo: "img/loga/logo-pwr.webp"
+    url: "https://www.pwr.edu.pl"
+  - name: "Manus"
+    logo: "img/loga/logo-manus.webp"
+    url: "https://manus.pl/"
+  - name: "CETA"
+    logo: "img/loga/logo-ceta.webp"
+    url: "https://filmstudioceta.pl/"
